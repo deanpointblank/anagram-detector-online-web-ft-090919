@@ -11,7 +11,6 @@ class Anagram
   
   def match(word_list)
     word_list.each do |possible_anagram|
-      #binding.pry
       letter_array = possible_anagram.split("")
       if letter_array.sort == @word.split("").sort
         @matches << possible_anagram
